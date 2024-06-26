@@ -39,4 +39,4 @@ galleryItems.forEach((item) => {
        
   
 
-console.log(galleryItems);
+// console.log(galleryItems);
