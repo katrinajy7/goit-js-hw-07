@@ -8,7 +8,7 @@ const photosMarkup = createGalleryItem(galleryItems);
 function createGalleryItem(array) {
    return array.map(({preveiw, original, description}) => {
         return `
-        <a class="gallery_item" href="${original}">
+        <a class='gallery_item' href="${original}">
             <img class="gallery_image" src="${preview}" alt="${description}"/>
         </a>
         `;
@@ -19,4 +19,6 @@ function createGalleryItem(array) {
 galleryContainer.insertAdjacentHTML("beforeend", photosMarkup);
 
 const galleryHandler = new simpleLightbox(".gallery a", { captionsData: "alt", captionsDelay: 250});
-console.log(galleryHandler);
+// console.log(galleryHandler);
+
+galleryHandler.on(show.simpleLightbox);
