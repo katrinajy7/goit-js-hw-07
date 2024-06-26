@@ -23,7 +23,7 @@ galleryItems.forEach((item) => {
     gallery.addEventListener("click", (e) => {
         if (e.target.tagName === "IMG") {
             let bigImage = e.target.getAttribute("data-source");
-            let instance = basiclightbox.create(`<img src=${bigImage} width="800" height="600"/>`);
+            let instance = basiclightbox.create(`<img src="${bigImage}" width="800" height="600"/>`);
             instance.show();
 
             // window.addEventListener("keyup", (e) => {
