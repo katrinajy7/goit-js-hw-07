@@ -26,12 +26,12 @@ galleryItems.forEach((item) => {
             let instance = basiclightbox.create(`<img src="${bigImage}" width="800" height="600"/>`);
             instance.show();
 
-            // window.addEventListener("keyup", (e) => {
-            //     if (e.code ==="Escape") {
-            //         console.log("esc key is pressed");
-            //         instance.close();
-            //     }
-            // });
+            window.addEventListener("keyup", (e) => {
+                if (e.code ==="Escape") {
+                    console.log("esc key is pressed");
+                    instance.close();
+                }
+            });
 
         }  
      });
@@ -39,4 +39,4 @@ galleryItems.forEach((item) => {
        
   
 
-// console.log(galleryItems);
+console.log(galleryItems);
