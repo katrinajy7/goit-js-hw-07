@@ -13,7 +13,10 @@ function createGalleryItem(array) {
         </a>
         `;
     })  
-
+    .join("");
 }
 
-console.log(photosMarkup);
+galleryContainer.insertAdjacentHTML("beforeend", photosMarkup);
+
+const galleryHandler = new simpleLightbox(".gallery a", { captionsData: "alt", captionsDelay: 250});
+console.log(galleryHandler);
