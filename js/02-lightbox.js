@@ -1,4 +1,19 @@
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
 
-console.log(galleryItems);
+const galleryContainer = document.querrySelector("ul.gallery");
+
+const photosMarkup = createGalleryItem(galleryItems);
+
+function createGalleryItem(array) {
+   return array.map(({preveiw, original, description}) => {
+        return `
+        <a class="gallery_item" href="${original}">
+            <img class="gallery_image" src="${preview}" alt="${description}"/>
+        </a>
+        `;
+    })  
+
+}
+
+console.log(photosMarkup);
