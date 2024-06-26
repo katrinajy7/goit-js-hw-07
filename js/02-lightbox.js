@@ -19,6 +19,6 @@ function createGalleryItem(array) {
 galleryContainer.insertAdjacentHTML("beforeend", photosMarkup);
 
 const galleryHandler = new simpleLightbox(".gallery a", { captionsData: "alt", captionsDelay: 250});
-console.log(galleryHandler);
+// console.log(galleryHandler);
 
-// galleryHandler.on(show.simpleLightbox);
+galleryHandler.on(show.simpleLightbox);
